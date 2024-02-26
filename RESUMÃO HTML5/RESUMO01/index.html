@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de HTML</title>
+</head>
+<body>
+    <h1>Titulo usa a tag H.</h1>
+    <p>Parágrafo usa a tag P.</p>
+    <ol>OL é usado para fazer uma lista em ordem numérica:
+        <li>Primeiro exemplo</li>
+        <li>Segundo exemplo</li>
+    </ol>
+    <ul>UL é usado para fazer uma lista sem ordem numérica:
+        <li>Primeiro exemplo</li>
+        <li>Segundo exemplo</li>
+    </ul>
+    <h1>Usando Tag A para criar links</h1>
+    <p>Exemplo:</p>
+    <a href="https://wiki.ravendawn.online/" target="_blank" rel="external">Clique aqui</a> para acessar o site do RavenDawn
+    <h1>Para colocar imagem usando IMG</h1>
+    <img src="imagem/Brazil-biotech-and-bioeconomy-gets-political-boost-with-parliamentary-group.jpg" alt="Imagem teste">
+    <h1>Colando Video usando a tag VIDEO</h1>
+    <video src="Meu-Video.Mp4.mp4" controls></video>
+    <h1>Usando link direto do Youtube</h1>
+    <p>Em compartilhar, clique em <b>Incorporar</b> e copie todo o conteúdo <b>IFRAME</b></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DfcXJYv_dxE?si=xHDep8c3xbFHAemH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Colocando audio usando a tag AUDIO</h1>
+    <audio src="Mansionz - stfu (Audio) ft. Spark Master Tape.mp3" controls></audio>
+    <h1>Colocando Formulários</h1>
+    <p>No FORM você coloca um INPUT. No site <a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank" rel="external">W3</a> tem vários, então posso escolher o que eu desejar.</p>
+    <form action="formulario.html" method="get">
+        <label for="Email">Email: </label>
+        <input type="email" name="email" id="email">
+
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" required>
+
+        <br>
+            <label for="numero">Digite um Número</label>
+            <input type="number" name="numero" id="numero" min="1" max="122">
+        </br>
+        <br>Linguas que você domina:
+            <label for="ingles">Inglês</label>
+            <input type="checkbox" name="linguagens" id="ingles" value="ingles">
+            <label for="portugues">Português</label>
+            <input type="checkbox" name="linguagens" id="portugues" value="portuges">
+            <label for="japones">Japonês</label>
+            <input type="checkbox" name="linguagens" id="japones" value="japones">
+        </br>
+        
+        <br> Gênero:
+            <input type="radio" name="generos" id="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="generos" id="masculino">
+            <label for="masculino">Masculino</label>
+        </br>
+
+        <button type="reset">Resetar</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png.png" type="image/png">
+        <img src="imagens/img-g.png.png" alt="Imagem flexível">
+    </picture>
+    <p>Foi usado a tag SOURCE MEDIA TYPE e mudei o width para "max". No SRCSET foi adicionado a imagem média e no TYPE adicionamos o final PNG.</p>
+    <p>Isso significa que, quando a tela for maior que 1050, a imagem GRANDE irá aparecer. Tela até 1050 irá aparacer a imagem MÉDIA e Imagem menor em tela máxima em 750px </p>
+    <p>ATENÇÃO!!</p>
+    <p>Os SOURCES devem ser adicionado sempre acima da IMG uploadiada primeira. Por exemplo, a IMG GRANDE foi adicionado usando a tag IMG, porém a imagem média e pequena, foram adicionadas usando a tag SOURCE!!! </p>
+    <p>As imagens foram editadas usando GIMP e as dimensões das imagens foram  P:80px M:700px G:1000px</p>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5 usando a tag AUDIO, selecionar o áudio usando CTRL+SPACE e adicionar junto a tag o CONTROLS AUTOPLAY. </p>
+    <audio src="midia/playtime.mp3" controls autoplay></audio>
+    <p>Tem outra maneira de adicionar áudio para outros formatos de áudio, como por exemplo MP3-WAV-OGG. Então usaremos essa outra forma: Entre no HTML para olhar o novo tipo</p>
+    <audio preload="metadata" controls>
+        <source src="midia/playtime.mp3" type="audio/mpeg">
+        <source src="midia/playtime.mp3" type="audio/ogg">
+        <source src="midia/playtime.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/playtime.mp3">Clique aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+</body>
+</html>

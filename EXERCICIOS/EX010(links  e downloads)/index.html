@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Link externo é um link que vai ter levar para outros sites</p>
+    <p>Por exemplo: <a href="https://www.youtube.com/@LivesAlanzoka">Canal do alanzoka</a></p>
+    <p>O link do canal do alanzoka foi envolepado usando a CRTL+SHIFT+P +a. A Tag "a" ela é chamada de ancora, pois nela onde fica o link de direcionamento para o site final desejado.</p>
+    <p>Na area de HREF foi colocado a URL do site do Alanzoka.</p>
+    <h1>Colando Link para ser aberto em uma outra aba</h1>
+    <p>Veja que, ao clicar no link da live do alanzoka, ela subescreveu o site que ja estava aberto, ou seja, você perde acesso ao site anterior</p>
+    <p>Por isso, devemos acrescer junto a tag "a" as seguintes informaçoes "target="_blank" e "rel="external"</p>
+    <p>Ficará assim:</p>
+    <p><a href="https://www.youtube.com/@LivesAlanzoka" target="_blank" rel="external">Canal do Alanzoka</a></p>
+    <h1>Usando links internos</h1>
+    <p>Links internos são aqueles que fazem parte do site, que vão levar a áreas do seu próprio site.</p>
+    <p>Criamos uma nova pagina dentro do mesmo HTML chamada de "pag002.html"</p>
+    <p>Está é primeira página do site. Para acessar a segunda página, clique em <a href="pag002.html">segunda página</a></p>
+    <p>Dica: Usando o studio code, você pode usar uma tecla de atalho CRTL+SPACE que ele te mostrará as páginas.</p>
+    <p>Quando eu faço um link interno, eu não preciso indicar a URL inteira.</p>
+    <p>Podemos colocar também dentro da tag "a" o "rel="next" na primeira página e "rel="prev" na segunda página. Visualmente não muda nada, porém adiciona uma semântica ao site. Por exemplo: Clique <a href="pag002.html" rel="next">aqui</a></p>
+    <p>Você pode também acessar nossa <a href="noticias/pag003.html">página de notícias</a></p>
+    <p>Eu posso adicionar um link para uma página sem que ela continue abrindo várias abas, usando o "target=_self"</p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/CURRICULUM.pdf" download="CURRICULUM.pdf" type="application/pdf">Baixar o meu currilum</a></li>
+        <li><a href="livro/CURRICULUM.zip" download="CURRICULUM.zip" type="application/zip">Baixar o curriculum em formato zip</a></li>
+    </ul>
+
+</body>
+</html>

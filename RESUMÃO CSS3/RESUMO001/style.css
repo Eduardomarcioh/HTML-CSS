@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+.container {
+    background-color: aquamarine
+}
+.titulos {
+    background-color: darkorchid;
+    text-align: center;
+}
+.paragrafos {
+    background-color: black;
+    color: white;
+    font-style: italic;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em línguagem JavaScript.</p>
+    <p>O código &lt;code&gt; ele é usado para que as letras fique na mesma fonte. Diferente desse comando document.getElementById('teste') sem modificação </p>
+    <h2>Exemplo com código Phyton</h2>
+    <p>Esse exemplo foi inserido a tag &lt;pre&gt; e depois um código phyton usando a tag &lt;code&gt;</p>
+    <code>num = inte(input('Digite um numero'))
+        if num % 2 == 0:
+            print(f'0 número{num} é PAR)
+        else:
+            print(f'0 número {num} é ÍMPAR)
+        print('Fim do programa')       
+         
+    </code>
+    <p>Vemos que a tag ficou em formato de texto seguido, não um embaixo do outro. Para isso, vamos envolopar usando o EM <strong>(CTRL+SHIFT+P)</strong> em PRE. Desse jeito:</p>
+    <pre>
+        <code>
+            num = inte(input('Digite um numero'))
+            if num % 2 == 0:
+                print(f'0 número{num} é PAR)
+            else:
+                print(f'0 número {num} é ÍMPAR)
+            print('Fim do programa')
+    </code>    
+    </pre>
+    <p>Dica:</p>
+    <p>Se quiser tirar esse espaçamento na tag PRE, você seleciona o texto (sem as tags) segura a tecla <strong>SHIF+TAB</strong>, ele volta o espaçamento ou apenasa o <strong>TAB</strong> que ele acrescenta. EXEMPLO:</p>
+    <pre>
+        <code>
+    num = inte(input('Digite um numero'))
+    if num % 2 == 0
+        print(f'0 número{num} é PAR)
+    else:
+        print(f'0 número {num} é ÍMPAR)
+    print('Fim do programa')
+    </code>    
+    </pre>   
+    <p>Dentro da tag PRE você também pode criar espaçamento, usando o ENTER ao inves de digitar a tag BR. Não precisa fazer isso no HTML, pois isso você consegue fazer no CSS. Mas é possível!</p>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computação é um burro muito rápido</q></p>
+    <p>A tag Q é usado em citação, poderia usar as aspas? Sim, porém é melhor</p>
+    <h2>Citações completas</h2>
+    <p>Segundo John Wiley, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.hu/books/edition/Mastering_HTML_and_XHTML/ym8nKP7JdHwC?hl=en&gbpv=1&dq=HTML&pg=PA187&printsec=frontcover">
+        A diferença entre elementos online e um bloco de texto é importante. Os elementos HMTL neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Styles Sheets">CSS</abbr>. Estou adorando!</p>
+    <p>Na página não muda muita coisa, mas se você passar o mouse por cima, verá o significado do código</p>
+</body>
+</html>
