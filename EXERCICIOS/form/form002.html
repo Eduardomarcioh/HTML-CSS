@@ -7,26 +7,38 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
-        <p> 
-            <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="25" placeholder="Nome do usuário">
-        </p>
-        <p>
-            <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="Senha">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="iusu">Usuário:</label>
+                    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="25" placeholder="Nome do usuário">
+                </p>
+                <p>
+                    <label for="isen">Senha:</label>
+                    <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="Senha">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <p>
+                    <input type="radio" name="sexo" id="imascu" value="M" required> <label for="imascu">Masculino</label><br>
+                    <input type="radio" name="sexo" id="ifemin" value="F" required> <label for="ifemin">Feminino</label><br>
+                </p>
+            </fieldset>
+        </form>
     <p>Nesse formulário foi utilizado um novo atributo chamado <strong>REQUIRED</strong>. Ele é utilizado quando o usuário precisa informar aquele dado, torando obrigatório.
     </p>
     <p>Também foi usado uma atribuição para o tamanho minino e maximo de um dado. Nesse caso, foi solicitado usando <strong>MINLENGTH
     "5" e MAXLENGTH"25"
     </strong>. Isso significa que os dados tem que ter no minimo 5 letras e no máximo 25.</p>
     <p>Usando o <strong>PLACEHOLDER</strong> você coloca a mensagem dentro da caixa.</p>
+    <p>Usando a tag <strong>FIELDSET</strong>você consegue colocar o formulário dentro de uma box, onde você pode customizar usando CSS.</p>
+    <p>No formulário de <strong>SEXO</strong> o nome do input tem que ser o mesmo, pois você so poderá escolher uma das duas opções. Caso o nome fosse diferente, tanto o masculino quanto o femino seriam marcados.</p>
     
 </body>
 </html>
