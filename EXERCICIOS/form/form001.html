@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome </label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p> 
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+    <p>Nesse código podemos observar que no <strong>FORM</strong> foi adicionado o <strong>ACTION</strong> como <strong>(Cadastro.php)</strong> pelo fato que esse dados terãp que ser enviados para um outro servidor, no caso, utilizado o php.</p>
+    <p>Também foi adicionado a tag chamada <strong>(autocomplete"off")</strong>. Essa tag é utilizada para que as informações dentro campo de preenchimento não fiquem salvas.</p>
+    <p>A TAG <strong>LABEL</strong>, foram utilizadas envelopando tanto o <strong>SOBRENOME e o NOME</strong>. Dentro do LABEL você coloca o <strong>ID</strong> do input. Isso irá facilitar o algoritimo de busca </p>
+    <p>Na <strong>TAG METHOD=""</strong> você terá duas opções: <strong>GET e POST</strong>. Quando utilizar as duas? O <strong>GET</strong> é o mais padrão e você irá utilizar quando os dados a serem enviados, não sejam sensiveis. O <strong>POST</strong> é o contrário. O <strong>POST </strong>é usado em envios de <strong>senhas, imagens e envio de arquivos</strong> por exemplo. Para que os dados sensíveis fiquem mais seguros, deve ser utilizado o PHPS, pois ele criptográfa esse tipo de informações em dados mais sensíveis.</p>
+</body>
+</html>
