@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query </title>
+    <!-- Chamadas de Média Query-->
+    <link rel="stylesheet" href="estilos/tela.css" media="screen">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+</head>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+            <ul>
+                <li>Esportes</li>
+                <li>Política</li>
+                <li>Tecnologia</li>
+            </ul>
+
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Exemplo de Media Queries</h2>
+            <p>
+                Para esse exercício foram criados dois arquivos CSS, um para a tela do site e um outro para impressora, ou seja, caso a página seja impressa, terá configurações diferentes.
+            </p>
+            <p>
+                Foi adicionado no estilo de tela o <strong>media=screen</strong> e no estilo da impressora <strong>media=print</strong>
+            </p>
+            <p>
+                Então, quando você for imprimir o site, algumas informações são desnecessária. Por exemplo, o menu com <strong>Esportes, Politica, tecnologia</strong>. Então dentro do estilo de impressora, pode dizer que <strong>O contéudo do menu não deverá aparecer caso seja impresso o site</strong> usando a tag <strong>display: none</strong>
+            </p>
+        </article>
+    </main>
+    
+</body>
+</html>
